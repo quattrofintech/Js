@@ -9,10 +9,89 @@
 <body>
     <h1>DOM</h1>
     <p>DOCUMENT OBJECT MODEL</p>
-    <img src="img/mapa.jpg" alt="">
+
     <script>
-        //alert('Olá, mundo!');
-        console.log('Olá, Mundo!');
+        //alert("Olá, Mundo!"); // DA UM ALERTA NA TELA
+        //console.log("Olá, Mundo!"); // SAI NO CONSOLE DA PAGINA 
+
+        /*
+            Number (50, -200, 12.50, -250.32) 
+            String ("Texto", 'Nome completo', `Texto completo`)
+            Boolean (true / false) 
+        */
+
+        //VARIAVEIS JS
+        /*
+            Pode Começar por Letras, $, _ => nome, Nome, numero,
+            Pode ter letras ou numeros => nome1, nome2, n1, n2
+            Poder usar acentos
+
+            ~~~ NÃO ~~~
+            Não pode começar com números => 1nome, 2n
+            Não pode ter espaços => Nome Completo
+            Não pode ter palavras reservadas => alert, console, var, let, const , if , switch, for, while, class 
+
+        */
+
+        // DECLARAR 
+        console.log("DECLARANDO VARIAVEIS!!!")
+        var nome1 = "Gabriel 1"
+        var nome2 = 'Gabriel 2'
+        var nome3 = `Gabriel 3`
+        
+        console.log(nome1)
+        console.log(nome2)
+        console.log(nome3)
+
+        // DECLARANDO NOTAS
+        console.log("DECLARANDO VARIAVEIS");
+        var n1 = 10
+        var n2 = 8
+
+        console.log(n1);
+        console.log(n2);
+
+        // DECLARADA BOOLEAN
+        console.log("DECLARANDO VARIAVEIS")
+        var passouAno = false;
+
+        console.log(passouAno);
+
+        //PESSOAS AGORA
+        var nome = "AKio Hashimoto";
+        var idade = 18;
+        var sexo = "M";
+        var altura = 1.78;
+        
+        console.log("Nome: " + nome);
+        console.log(`Seu nome é ${nome}, você tem ${idade}, altura: ${altura} e é do sexo: ${sexo}`);
+        console.log('Seu nome é nome e você tem idade anos e é do sexo sexo');
+        console.log(`Seu nome é nome e você tem idade anos e é do sexo sexo`);
+        
+//  crie salario com valor 2256.20
+        var salario = 2256.20;
+        console.log(`O salário de ${nome} é R$ ${salario}`);
+
+        // VARIAVEL
+        salario = 4598.35; // Salario esta recebendo 4598.35
+        console.log(`O salário de ${nome} é R$ ${salario}`);
+
+        nome = "Igor Felipe"; // Nome esta rebendo o valor Igor Felipe
+        console.log(`O salário de ${nome} é R$ ${salario}`);
+        
+        var a = "nome";
+        var A = "NOME";
+
+        a =  "Mateus";
+        console.log( a + " - " + A);
+        
+        a = "Kenji";
+        console.log( a + " - " + A);
+
+        // Tipos de Variaveis 
+        console.log("TIPO DE VARIAVEIS")
+        console.log(typeof(25)); // TIPO DE: 
+
     </script>
 </body>
 </html>
