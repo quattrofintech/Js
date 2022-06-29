@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ***** MOBILE ****** */ 
+body{
+    background-color: black;
+    font-size: 16px;
+}
+
+header{
+    display: none;
+}
+
+/* MENU HAMBURGUER */ 
+#hamburguer{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+
+}
+#hamburguer label{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: black;
+
+    padding: 0px 15px;
+}
+
+#hamburguer input[type=checkbox]{
+    display: none;
+}
+
+.container-menu{
+    width: 50%;
+    height: auto; /* calc(100vh - 31px); Pega altura da tela toda*/
+    background-color: white;
+    text-align: center;
+
+    display: none;
+}
+
+.container-menu a{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+
+    text-align: center;
+}
+
+.container-menu .container{
+    padding: 10px;
+}
+
+.container-menu .container ul{
+    list-style: none;
+}
+
+.container-menu .container ul li{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-menu .container ul li a{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+}
+
+/* MODAL */
+
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.801);
+    
+    position: fixed;
+    top: 0;
+
+    display: none;
+}
+
+.modal-container .modal{
+    width: 90%;
+    height: 50vh;
+    margin-left: 5%;
+    margin-top: 25vh;
+    
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal-container .modal button{
+    width: 30px;
+    height: 30px;
+    float: right;
+
+    background-color: red;
+    border: none;
+
+    font-size: 15pt;
+
+    cursor: pointer;
+
+    margin: 5px;
+
+    transition: all 0.5s;
+
+}
+.modal-container .modal button:hover{
+    border-radius: 50%;
+}
+
+
+
+/* ***** DESKTOP AND TABLET ***** */ 
+@media (min-width: 800px){
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: inline-block;
+    }
+    
+    header a{
+        font-size: 1.5em;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        color: red;
+    }
+    
+    header .container{
+        padding: 10px;
+        float: right;
+    }
+    
+    header .container a{
+        font-size: 1.3em;
+        color: black;
+    }
+
+    /* MENU MOBILE */
+    #hamburguer{
+        display: none;
+    }
+
+    .container-menu{
+        display: none;
+    }
+
+    /* MODAL */
+
+    .modal-container{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.801);
+        
+        position: fixed;
+        top: 0;
+
+        display: none;
+    }
+
+    .modal-container .modal{
+        width: 50%;
+        height: 50vh;
+        margin-left: 25%;
+        margin-top: 25vh;
+        
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .modal-container .modal button{
+        width: 50px;
+        height: 50px;
+        float: right;
+
+        background-color: red;
+        border: none;
+        padding: 10px;
+
+        font-size: 20pt;
+
+        cursor: pointer;
+
+        margin: 5px;
+
+        transition: all 0.5s;
+
+    }
+    .modal-container .modal button:hover{
+        border-radius: 50%;
+    }
+}

@@ -4,93 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 01</title>
+    <title>Variáveis</title>
 </head>
 <body>
     <h1>DOM</h1>
-    <p>DOCUMENT OBJECT MODEL</p>
+    <p>Document Object Model</p>
 
+    <h1>Variáveis</h1>
+    <p>São espaços criados na mémoria</p>
+    <ul>
+        <li>Podem</li>
+        <ul>
+            <li>Podem começar com letras, $ ou _</li>
+            <li>Pode usar letras e números</li>
+            <li>Pode usar acenetos</li>
+        </ul>
+        <li>Não Podem</li>        
+        <ul>
+            <li>Não podem começar com números</li>
+            <li>Não podem conter espaços</li>
+            <li>Não podem ser palavras reservadas</li>
+        </ul>
+    </ul>
+    <pre>
+        <code>
+            //Declarando Variaveis
+            var nome1 = "Gabriel"
+            var nome2 = 'Gabriel'
+            var nome3 = `Gabriel`
+        </code>
+    </pre>
+
+    <ul>
+        <p>Principais tipos de variáveis</p>
+        <li>Inteiro/Int: -50, -2, 0, 15, 200, 10000, 54000</li>
+        <li>Reais/Float/Double: -50.5, -9.34, 0.2, 15.34, 100.2345, 10000.324</li>
+        <li>Texto/String: "a", "Gabriel", "Nome Completo", 'Maria', `Artigo gigante de texto`, '123.654.987-96'. '(21)9 1234 - 9876'</li>
+        <li>Lógico/Boolean: true, false</li>
+    </ul>
     <script>
-        //alert("Olá, Mundo!"); // DA UM ALERTA NA TELA
-        //console.log("Olá, Mundo!"); // SAI NO CONSOLE DA PAGINA 
+        //Declarando variáveis
+        var nome1 = "Gabriel 1";
+        var nome2 = 'Gabriel 2';
+        var nome3 = `Gabriel 3`;
 
-        /*
-            Number (50, -200, 12.50, -250.32) 
-            String ("Texto", 'Nome completo', `Texto completo`)
-            Boolean (true / false) 
-        */
-
-        //VARIAVEIS JS
-        /*
-            Pode Começar por Letras, $, _ => nome, Nome, numero,
-            Pode ter letras ou numeros => nome1, nome2, n1, n2
-            Poder usar acentos
-
-            ~~~ NÃO ~~~
-            Não pode começar com números => 1nome, 2n
-            Não pode ter espaços => Nome Completo
-            Não pode ter palavras reservadas => alert, console, var, let, const , if , switch, for, while, class 
-
-        */
-
-        // DECLARAR 
-        console.log("DECLARANDO VARIAVEIS!!!")
-        var nome1 = "Gabriel 1"
-        var nome2 = 'Gabriel 2'
-        var nome3 = `Gabriel 3`
-        
         console.log(nome1)
         console.log(nome2)
         console.log(nome3)
 
-        // DECLARANDO NOTAS
-        console.log("DECLARANDO VARIAVEIS");
-        var n1 = 10
-        var n2 = 8
-
-        console.log(n1);
-        console.log(n2);
-
-        // DECLARADA BOOLEAN
-        console.log("DECLARANDO VARIAVEIS")
-        var passouAno = false;
-
-        console.log(passouAno);
-
-        //PESSOAS AGORA
-        var nome = "AKio Hashimoto";
+        // PESSOA AGORA
+        var nome = "Akio Hashimoto";
         var idade = 18;
         var sexo = "M";
-        var altura = 1.78;
-        
-        console.log("Nome: " + nome);
-        console.log(`Seu nome é ${nome}, você tem ${idade}, altura: ${altura} e é do sexo: ${sexo}`);
-        console.log('Seu nome é nome e você tem idade anos e é do sexo sexo');
-        console.log(`Seu nome é nome e você tem idade anos e é do sexo sexo`);
-        
-//  crie salario com valor 2256.20
-        var salario = 2256.20;
-        console.log(`O salário de ${nome} é R$ ${salario}`);
 
-        // VARIAVEL
-        salario = 4598.35; // Salario esta recebendo 4598.35
-        console.log(`O salário de ${nome} é R$ ${salario}`);
+        console.log("Seu nome é " + nome + " com " + idade + " anos e do sexo " + sexo)
+        console.log('Seu nome é ' + nome + ' com ' + idade + ' anos e do sexo ' + sexo)
+        console.log(`Seu nome é ${nome} e você tem ${idade} anos e é do sexo ${sexo}`)
 
-        nome = "Igor Felipe"; // Nome esta rebendo o valor Igor Felipe
-        console.log(`O salário de ${nome} é R$ ${salario}`);
-        
-        var a = "nome";
-        var A = "NOME";
+        var salario = 2256.65;
+        console.log(`O salário de ${nome} é de R$ ${salario}`)
 
-        a =  "Mateus";
-        console.log( a + " - " + A);
-        
-        a = "Kenji";
-        console.log( a + " - " + A);
+        salario = 3560.50;
+        console.log(`O salário de ${nome} é de R$ ${salario}`)
 
-        // Tipos de Variaveis 
-        console.log("TIPO DE VARIAVEIS")
-        console.log(typeof(25)); // TIPO DE: 
+        //Tipos de Variaveis
+        console.log(typeof("-123"))
 
     </script>
 </body>

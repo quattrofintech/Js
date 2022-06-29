@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 JS</title>
+    <style>
+        .titulo{
+            text-shadow: 2px 2px 5px black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .size{
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Aula</h1>
+
+    <main>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore modi, voluptate ipsum id sit natus fugit praesentium, ab quod autem debitis officiis sed quos dolorem illum porro dolore impedit consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum velit repellendus tenetur. Sit nesciunt cupiditate ea expedita! Tempora, recusandae vero? Aperiam vitae nisi labore rem mollitia id dicta recusandae.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem necessitatibus ipsa fugit inventore aspernatur repellendus aperiam quam quae consequatur vero? Maxime non, neque corporis impedit hic illum veniam dolore pariatur?</p>
+    </main>
+
+    <img src="../assets/img/logoFundoAzulVGA.jpg"  id="testeImg" />
+
+    <aside class="asd"> </aside>
+
+    <script>
+        var titulo = document.getElementsByTagName('h1')[0]; // Capturei a Tag H1 e coloquei na variavel titulo
+        titulo.innerText += " 04"; // Inserindo um novo valor ao atributo innerText
+        // titulo.innetText = titulo.innerText + " 04" || titulo.innetText = "Aula 04"
+        console.log(titulo);
+
+        // Inserir a Classe
+        titulo.classList.add('red');
+        titulo.classList.add('size');
+        // Remover Class
+        titulo.classList.remove('titulo')
+
+
+
+        // Style
+        var main = document.querySelector('main');
+        console.log(main)
+        main.style.backgroundColor = '#cfc';
+        main.style.width = "50%";
+        main.style.margin = "auto";
+        main.style.padding = "20px";
+        main.style.color = "#f00";
+        main.style.fontSize = '1.2em';
+        main.style.boxShadow = "10px 10px 20px black";
+
+        //IMG
+        var img = document.getElementById('testeImg');
+        console.log(img);
+        img.style.marginTop = "100px";
+        img.style.width = "100%";
+        img.style.opacity = "0.5";
+        img.src = "../assets/img/lofi.webp";
+        
+
+        // ASIDE
+        var aside = document.getElementsByClassName('asd')[0];
+        console.log(aside);
+        aside.style.width = "100%"; // document.getElementsByClassName('asd')[0].style.width = "100%";
+        aside.style.height = "500px"; // document.getElementsByClassName('asd')[0].style.height = "500px";
+        aside.style.marginTop = "100px"; // document.getElementsByClassName('asd')[0].style.marginTop = "100px";
+        aside.style.backgroundColor = "black"; // document.getElementsByClassName('asd')[0].style.backgroundColor = "black";
+        aside.style.backgroundImage = "url(../assets/img/lofi.webp)"; 
+        // document.getElementsByClassName('asd')[0].style.backgroundImage = "url(../assets/img/lofi.webp)";
+        aside.style.display = 'block'; // document.getElementsByClassName('asd')[0].style.display = 'block';
+        aside.style.visibility = "visible"; // document.getElementsByClassName('asd')[0].style.visibility = "visible";
+
+        // Body
+        document.body.style.background = '#000';
+
+        // Title
+        document.title = "Aprendendo Js";
+        document.getElementsByTagName('title')[0].innerText = "Outra forma de alterar o titulo";
+    
+
+    </script>
+</body>
+</html>
