@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 08</title>
+    <style>
+        p{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        p span{
+            width: auto;
+            color: white;
+            margin: 5px;
+            font-size: 1em;
+            padding: 10px;
+            background-color: rgb(1, 1, 71);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<!-- 
+    Para Chamar o Inicializa
+    <body onload="inicializar()"> 
+
+    <div class="teste">
+    </div>
+-->
+<body>
+    <div class="container-form">
+        <form name="formCadastro">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Conhecimentos e Habilidades</legend>
+                <input type="text" class="inpt" placeholder="Sql, Python, Js, Node, Java, C, C# . . ." onblur="exibirTootips()">
+                <button onclick="newInput(event)">+</button>
+                <button onclick="rmInput(event)">-</button>
+                <br>
+
+            </fieldset>
+        </form>
+    </div>
+    <p></p>
+
+
+    <!-- JS -->
+    <script src="inde.js"></script>
+</body>
+</html>
