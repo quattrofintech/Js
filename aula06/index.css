@@ -175,6 +175,7 @@ header{
         
         background-color: white;
         border-radius: 10px;
+
     }
 
     .modal-container .modal button{
@@ -199,3 +200,4 @@ header{
         border-radius: 50%;
     }
 }
+
